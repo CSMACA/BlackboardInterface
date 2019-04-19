@@ -1,0 +1,25 @@
+{
+  "name": "blackboardinterface",
+  "version": "1.0.0",
+  "description": "See https://www.w3schools.com/js/default.asp for info on learning the basics of Javascript.   https://www.npmjs.com/package/bb-rest   https://github.com/C-Weinstein/bb-rest *** # Requirements and Initialization In order to import the correct library, we use a statement like the following, that both defines the name of our app and assigns a library to that name. ```javascript const {     RestApp } = require('bb-rest'); ``` Following this, we have a list of required variables that define the origin path, the user key, and the user secret. ```javascript var origin = 'Base Blackboard URL'; var key = '<application key>'; var secret = '<secret key>'; ``` To initalize the app, we use the following line: ```javascript var rest_APP = new RestApp(origin, key, secret); ```",
+  "main": "BlackBoardNodeInterface.js",
+  "scripts": {
+    "start": "npx pm2 start bb-rest_TEST.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSMACA/BlackboardInterface.git"
+  },
+  "keywords": [
+    "blackboard",
+    "rest",
+    "node",
+    "api"
+  ],
+  "author": "Alan Roach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSMACA/BlackboardInterface/issues"
+  },
+  "homepage": "https://github.com/CSMACA/BlackboardInterface#readme"
+}
